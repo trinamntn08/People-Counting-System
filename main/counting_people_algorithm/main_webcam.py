@@ -13,7 +13,7 @@ class counting_people_detector():
         self.m_total_frames = [0]
 
     def run_model(self,frame):
-        print("[INFO] processing frame...")
+        #print("[INFO] processing frame...")
         if frame is not None:
             # resize the frame to have a maximum width of 512 pixels,
             # then convert the frame from BGR to RGB
@@ -21,7 +21,7 @@ class counting_people_detector():
             #frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             (H_frame, W_frame) = frame.shape[:2]
             self.m_model_tracking.set_size_frame(H_frame, W_frame)
-            print("Height Frame:", H_frame,"Width Frame:",W_frame)
+            #print("Height Frame:", H_frame,"Width Frame:",W_frame)
             #Run model in each frame
             self.m_model_tracking.run_model(frame, self.m_total_frames, self.m_total_in,self.m_total_out,self.m_nbr_frames_tracking)
             return frame

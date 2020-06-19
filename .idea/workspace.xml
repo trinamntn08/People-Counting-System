@@ -2,16 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83173203-675a-4cb2-a5e1-22fcfd2ff243" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/counting_people_algorithm/age_gender_predictor/age_gender_predictor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/counting_people_algorithm/age_gender_predictor/model_face_age_gender_detector.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/counting_people_algorithm/main_webcam.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/counting_people_algorithm/main_webcam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/counting_people_algorithm/listPersonsDetected.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/counting_people_algorithm/list_persons_detected.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/counting_people_algorithm/main_video.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/counting_people_algorithm/main_webcam.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/counting_people_algorithm/model_all.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/counting_people_algorithm/mobilenet_ssd/MobileNetSSD_deploy.caffemodel" beforeDir="false" afterPath="$PROJECT_DIR$/main/counting_people_algorithm/model_detector/mobilenet_ssd/MobileNetSSD_deploy.caffemodel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/counting_people_algorithm/mobilenet_ssd/MobileNetSSD_deploy.prototxt" beforeDir="false" afterPath="$PROJECT_DIR$/main/counting_people_algorithm/model_detector/mobilenet_ssd/MobileNetSSD_deploy.prototxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/counting_people_algorithm/modelTracker.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/counting_people_algorithm/model_tracker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/counting_people_algorithm/model_detector/modelDetector.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/counting_people_algorithm/model_detector/model_detector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/counting_people_algorithm/personTracker.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/counting_people_algorithm/person_tracker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/main/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stream_counter_people/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/stream_counter_people/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stream_counter_people/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stream_counter_people/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -20,8 +38,13 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../web/Django-Webcam-Streaming-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/main/counting_people_algorithm/model_detector" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\learning\stream_counter_people\main\counting_people_algorithm\model_detector" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -53,7 +76,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

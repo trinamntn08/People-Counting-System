@@ -30,7 +30,7 @@ class Status(Enum):
 status=Status(0)
 
 class model_tracker:
-    def __init__(self,frame_size,model_detector,person_tracker,age_gender_predictor, method_tracker="dlib_correlation", confidence=0.2):
+    def __init__(self,frame_size,model_detector,person_tracker,age_gender_predictor, method_tracker="dlib_correlation", confidence=0.5):
         self.m_frame_size=frame_size
         self.m_model=model_detector
         self.m_model_detector= model_detector.load_model_detector()
@@ -60,26 +60,28 @@ class model_tracker:
             status = Status.DETECTING
             self.m_trackers = []
 
-            preprocessed_frame= cv2.dnn.blobFromImage(frame,0.007843,(self.m_frame_size.m_width,self.m_frame_size.m_height),127.5)
+            #preprocessed_frame= cv2.dnn.blobFromImage(frame,0.007843,(self.m_frame_size.m_width,self.m_frame_size.m_height),127.5)
+            preprocessed_frame = cv2.dnn.blobFromImage(frame, 1.0,
+                                                       (300,300), (104.0, 177.0, 123.0))
             self.m_model_detector.setInput(preprocessed_frame)
-            predictions=self.m_model_detector.forward()
+            predictions=self.m_model_detector.forward()  #[batchId, classId, confidence, left, top, right, bottom]
 
             #loop for every b_box detected
             for i in range(0,predictions.shape[2]):
-                # extract the confidence associated with the prediction
                 confidence = predictions[0, 0, i, 2]
+                #print("confidence: ",confidence)
 
                 if confidence > self.m_confidence:
                     idx=int(predictions[0,0,i,1])
                     #print('class: ', CLASSES[idx], ' Confidence: ', confidence)
-                    if self.m_model.get_classes()[idx] != "person":
-                        continue
+                    #if self.m_model.get_classes()[idx] != "person":
+                        #continue
                     # get (x,y) coordinate of the bounding box for person
                     b_box= predictions[0,0,i,3:7]*np.array([self.m_frame_size.m_width,self.m_frame_size.m_height,self.m_frame_size.m_width,self.m_frame_size.m_height])
                     (startX, startY, endX, endY) = b_box.astype("int")
                     list_bounding_boxes.append((startX, startY, endX, endY))
 
-                    #print('list bounding boxes: ',list_bounding_boxes)
+                    print('list bounding boxes: ',list_bounding_boxes)
 
                     # For dlib correlation tracker
                     if  self.m_method_tracker == "dlib_correlation":

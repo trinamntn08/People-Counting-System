@@ -6,6 +6,8 @@ from .counting_people_algorithm.model_all import *
 from .counting_people_algorithm.age_gender_predictor.age_gender_predictor import *
 from .counting_people_algorithm.age_gender_predictor.model_face_age_gender_detector import *
 from imutils.video import VideoStream
+from django.http import JsonResponse
+import random
 
 import threading
 import time
@@ -27,8 +29,8 @@ H_frame = None
 nbr_frames_tracking = 10
 method_tracker = "dlib_correlation"
 person_tracking = person_tracker(maxNbrFramesDisappeared=50, maxDistance=50)
-model_detector = model_detector(path_protocol=full_path_protocol_model,
-                                   path_weight=full_path_weight_model,
+model_detector = model_detector(path_protocol=full_path_protocol_model_face,
+                                   path_weight=full_path_weight_model_face,
                                    classes=CLASSES_MobileNet_SSD)
 
 faceDetector= model_face_age_gender_detector(path_protocol=path_protocol_face,
@@ -99,9 +101,19 @@ def generate(camera):
 
 
 def video_feed(request):
-    video_camera =  VideoCamera()
+    video_camera = VideoCamera()
     video_camera.set_input_video(mode_input=MODE_INPUT.WEBCAM,path_video=video_path)
     return StreamingHttpResponse(generate(video_camera), content_type='multipart/x-mixed-replace; boundary=frame')
 
+def random_value():
+    while True:
+        # yield the output frame in the byte format
+        yield (b'--frame\r\n' b'Content-Type: image/jpg\r\n\r\n' +
+               bytearray(random.randint(0,100)) + b'\r\n')
+
+def number_female(request):
+    return StreamingHttpResponse(5)
+
+
 def homepage(request):
-    return render(request=request,template_name="main\homepage.html")
+    return render(request,template_name="main\homepage.html")

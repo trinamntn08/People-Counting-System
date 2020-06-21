@@ -21,6 +21,7 @@ app_name='main'
 
 urlpatterns = [
     path('',homepage,name='homepage'),
-    path('video_feed/', video_feed, name="video_feed")
+    path('video_feed/', video_feed, name="video_feed"),
+    path('number_female/', number_female, name="number_female")
 
 ]

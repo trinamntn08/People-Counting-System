@@ -5,7 +5,7 @@ Monitor how many people are in stores.
 ## Pipeline:
 
 ### Step 1:
-- Video Input : wireless Webcam/Camera Phone 
+- Video Input : wireless Webcam/Recorded Video
 
 ### Step 2: 
 - Face Detection + Age & Sex Prediction

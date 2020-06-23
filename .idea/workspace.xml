@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83173203-675a-4cb2-a5e1-22fcfd2ff243" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/counting_people_algorithm/age_gender_predictor/model_face_age_gender_detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/counting_people_algorithm/age_gender_predictor/model_face_age_gender_detector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/counting_people_algorithm/model_detector/model_detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/counting_people_algorithm/model_detector/model_detector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/counting_people_algorithm/model_tracker.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/counting_people_algorithm/model_tracker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="83173203-675a-4cb2-a5e1-22fcfd2ff243" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +22,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/main/counting_people_algorithm/model_detector" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
